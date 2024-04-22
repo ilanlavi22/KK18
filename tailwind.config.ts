@@ -43,7 +43,7 @@ const config: Config = {
       backgroundPosition: {
         "hero-sm": "35% center",
         "hero-md": "center top",
-        "bg-about": "right center",
+        "bg-about": "center center",
         "bg-themen": "center 20%",
         "bg-themen-sm": "35% 20%",
         "bg-key": "-50px top",
