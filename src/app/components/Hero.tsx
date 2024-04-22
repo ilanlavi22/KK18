@@ -35,7 +35,7 @@ export default function Hero() {
             <li>Mut zur Stärke</li>
           </ul>
         </div>
-        <div className='inline-flex flex-col'>
+        <div className='inline-flex flex-col items-center'>
           <button className='mt-10 inline-flex gap-4 rounded-full bg-theme-pink px-9 py-3 font-proxima text-[17px] font-medium uppercase text-white md:ml-16 md:mt-14'>
             <span>Jetzt Ticket sichern</span>
             <BsTicketPerforated size='1.9rem' className='ml-auto' />
@@ -46,7 +46,7 @@ export default function Hero() {
               <FaFacebookF size='1.3rem' color='white' />
               <FaTwitter size='1.3rem' color='white' />
             </div>
-            <div className='flex'>
+            <div className='flex items-center'>
               <Image
                 src={QuadrigaLogo}
                 alt='Quadriga Logo'
