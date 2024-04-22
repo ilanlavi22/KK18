@@ -35,24 +35,27 @@ export default function Hero() {
             <li>Mut zur Stärke</li>
           </ul>
         </div>
-        <button className='mt-10 flex items-center justify-between gap-4 rounded-full bg-theme-pink px-9 py-3 font-proxima text-[17px] font-medium uppercase text-white md:ml-16 md:mt-14'>
-          <span>Jetzt Ticket sichern</span>
-          <BsTicketPerforated size='1.9rem' className='ml-auto' />
-        </button>
-        <div className='mt-5 flex items-center justify-center opacity-70 md:hidden'>
-          <div className='flex items-center gap-0.5 pr-3'>
-            <FaXing size='1.3rem' color='white' />
-            <FaFacebookF size='1.3rem' color='white' />
-            <FaTwitter size='1.3rem' color='white' />
+        <div className='inline-flex flex-col'>
+          <button className='mt-10 inline-flex gap-4 rounded-full bg-theme-pink px-9 py-3 font-proxima text-[17px] font-medium uppercase text-white md:ml-16 md:mt-14'>
+            <span>Jetzt Ticket sichern</span>
+            <BsTicketPerforated size='1.9rem' className='ml-auto' />
+          </button>
+          <div className='mt-5 flex justify-center opacity-70 md:hidden'>
+            <div className='flex items-center gap-0.5 pr-3'>
+              <FaXing size='1.3rem' color='white' />
+              <FaFacebookF size='1.3rem' color='white' />
+              <FaTwitter size='1.3rem' color='white' />
+            </div>
+            <div className='flex'>
+              <Image
+                src={QuadrigaLogo}
+                alt='Quadriga Logo'
+                width='95'
+                height='17'
+              />
+              <Image src={BdkomLogo} alt='BdKom Logo' width='95' height='17' />
+            </div>
           </div>
-
-          <Image
-            src={QuadrigaLogo}
-            alt='Quadriga Logo'
-            width='95'
-            height='17'
-          />
-          <Image src={BdkomLogo} alt='BdKom Logo' width='95' height='17' />
         </div>
       </div>
     </section>
