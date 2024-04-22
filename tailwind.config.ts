@@ -57,7 +57,8 @@ const config: Config = {
         "bg-key": "no-repeat",
       },
       gridTemplateColumns: {
-        "270": "repeat(auto-fill, minmax(270px, 1fr))",
+        "270": "repeat(auto-fit, minmax(280px, 1fr))",
+        "270-md": "repeat(2, 1fr)",
       },
       fontFamily: {
         nunitoSans: ["var(--font-nunitoSans)"],

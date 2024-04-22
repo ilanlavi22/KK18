@@ -18,7 +18,7 @@ export default function Themen() {
             diskutieren wir in vier Foren.
           </p>
         </div>
-        <div className='mt-16 grid grid-cols-270 justify-center gap-6 text-center md:mt-32 md:text-left'>
+        <div className='mt-16 grid grid-cols-1 justify-center gap-6 text-center sm:grid-cols-2 md:text-left lg:mt-32 xl:grid-cols-270'>
           <div className='border-theme-pink border-opacity-80 py-4 pr-4 md:border-r-2 md:py-2'>
             <h3 className='text-theme-pink md:text-white'>
               Mut zu unserer Profession
