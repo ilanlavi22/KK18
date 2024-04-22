@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import ButtonSichern from '../components/ButtonSichern';
 import BdkomLogo from '../../../public/bdKom.svg';
 import QuadrigaLogo from '../../../public/quadriga-logo.svg';
+import { BsTicketPerforated } from 'react-icons/bs';
 
 export default function About() {
   return (
@@ -27,9 +27,12 @@ export default function About() {
             Zukunft Ihrer Profession mit!
           </span>
         </p>
-        <ButtonSichern />
+        <button className='mt-10 flex items-center justify-between gap-4 rounded-full bg-theme-pink px-9 py-3 font-proxima text-[17px] font-medium uppercase text-white'>
+          <span>Jetzt Ticket sichern</span>
+          <BsTicketPerforated size='1.9rem' className='ml-auto' />
+        </button>
 
-        <div className='mt-5 hidden items-center opacity-70 md:flex'>
+        <div className='mt-5 hidden items-center justify-center opacity-70 md:flex'>
           <Image
             src={QuadrigaLogo}
             alt='Quadriga Logo'
