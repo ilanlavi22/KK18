@@ -27,7 +27,7 @@ const config: Config = {
       backgroundImage: {
         "hero-sm": "url('/ackermann_sebastian.jpg')",
         "hero-md": "url('/ackermann_sebastian.jpg')",
-        "bg-about": "url('/bg-about-alter1.jpg')",
+        "bg-about": "url('/bg-about-alter.jpg')",
         "bg-themen": "url('/coley-christine.jpg')",
         "bg-themen-sm": "url('/coley-christine.jpg')",
         "bg-key": "url('/key-visual.png')",
