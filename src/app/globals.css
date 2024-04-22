@@ -2,32 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  html,
+  body {
+    @apply min-h-screen overflow-x-hidden;
+  }
+  body {
+    @apply font-proxima antialiased;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+  .flex-start {
+    @apply flex items-center justify-start;
+  }
+  h1 {
+    @apply font-proxima text-5xl font-semibold uppercase tracking-[-0.0625rem] md:text-[3.125rem] md:leading-9;
+  }
+  h2 {
+    @apply font-proxima text-[2.0625rem] font-medium uppercase leading-9 tracking-[0.0625rem];
+  }
+  h3 {
+    @apply font-proxima text-[19px] font-semibold leading-6 tracking-normal md:font-medium;
+  }
+  nav a {
+    @apply rounded-sm bg-transparent px-3.5 py-1.5 font-proxima text-[14px] font-medium uppercase leading-6 tracking-[0.0625rem] text-white;
+  }
+  nav a.active,
+  nav a:hover {
+    @apply rounded-3xl bg-theme-pink transition-colors duration-150;
+  }
+  .dot {
+    @apply h-5 w-5 rounded-full bg-theme-pink;
+  }
+  .bg-filter::before {
+    @apply absolute h-full w-full bg-opacity-10 backdrop-blur-md;
   }
 }
