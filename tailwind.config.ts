@@ -45,7 +45,7 @@ const config: Config = {
         "hero-md": "center top",
         "bg-about": "center center",
         "bg-themen": "center 20%",
-        "bg-themen-sm": "35% 20%",
+        "bg-themen-sm": "35% top",
         "bg-key": "-50px top",
         //"hero-md": "left -30px",
       },
