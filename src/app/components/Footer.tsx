@@ -8,7 +8,7 @@ import { FaXing, FaFacebookF, FaTwitter } from 'react-icons/fa';
 export default function Footer() {
   return (
     <footer className='bg-[#6F3665]'>
-      <div className='container py-14'>
+      <div className='container px-5 py-14 sm:px-8'>
         <div className='flex flex-col items-center space-y-8 xl:flex-row xl:items-start xl:space-y-0'>
           <Image
             src={kk2018Logo}
