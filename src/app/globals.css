@@ -33,9 +33,16 @@
   nav a {
     @apply rounded-sm bg-transparent px-3.5 py-1.5 font-proxima text-[14px] font-medium uppercase leading-6 tracking-[0.0625rem] text-white;
   }
+  footer nav a {
+    @apply whitespace-nowrap py-0 leading-7 md:leading-tight;
+  }
   nav a.active,
   nav a:hover {
-    @apply rounded-3xl bg-theme-pink transition-colors duration-150;
+    @apply rounded-3xl bg-theme-pink;
+  }
+  footer nav a.active,
+  footer nav a:hover {
+    @apply rounded-none bg-transparent text-theme-pink transition-colors duration-150;
   }
   .dot {
     @apply h-5 w-5 rounded-full bg-theme-pink;

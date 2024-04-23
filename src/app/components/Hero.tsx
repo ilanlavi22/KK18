@@ -3,7 +3,7 @@ import MutLogo from '../../../public/mut_logo.png';
 import BdkomLogo from '../../../public/bdKom.svg';
 import QuadrigaLogo from '../../../public/quadriga-logo.svg';
 import { FaXing, FaFacebookF, FaTwitter } from 'react-icons/fa';
-import { BsTicketPerforated } from 'react-icons/bs';
+import ButtonSichern from './ButtonSichern';
 
 export default function Hero() {
   return (
@@ -36,10 +36,8 @@ export default function Hero() {
           </ul>
         </div>
         <div className='inline-flex flex-col items-center'>
-          <button className='mt-10 inline-flex items-center gap-4 rounded-full bg-theme-pink px-9 py-3 font-proxima text-[17px] font-medium uppercase text-white md:ml-16 md:mt-14'>
-            <span>Jetzt Ticket sichern</span>
-            <BsTicketPerforated size='1.9rem' className='ml-auto' />
-          </button>
+          <ButtonSichern className='inline-flex md:ml-14 md:mt-14' />
+
           <div className='mt-5 flex justify-center opacity-70 md:hidden'>
             <div className='flex items-center gap-0.5 pr-3'>
               <FaXing size='1.3rem' color='white' />

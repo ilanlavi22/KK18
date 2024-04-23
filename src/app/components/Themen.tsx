@@ -1,6 +1,6 @@
 export default function Themen() {
   return (
-    <section className='bg-bg-themen-sm relative min-h-[750px] text-white after:absolute after:right-0 after:top-0 after:h-full after:w-full after:bg-black after:opacity-80 md:bg-bg-themen md:after:opacity-65'>
+    <section className='relative min-h-[750px] bg-bg-themen-sm text-white after:absolute after:right-0 after:top-0 after:h-full after:w-full after:bg-black after:opacity-80 md:bg-bg-themen md:after:opacity-65'>
       <div className='container relative z-10 py-14 md:py-32'>
         <div className='flex flex-col items-center gap-12 md:flex-row'>
           <h2 className='relative flex items-center md:pl-[35px] md:pt-[50px] md:before:absolute md:before:left-0 md:before:top-0 md:before:h-[calc(100%+50px)] md:before:w-[30px] md:before:border-[9px] md:before:border-r-0 md:before:border-theme-pink'>
@@ -18,7 +18,7 @@ export default function Themen() {
             diskutieren wir in vier Foren.
           </p>
         </div>
-        <div className='mt-16 grid grid-cols-1 justify-center gap-6 text-center sm:grid-cols-2 md:text-left lg:mt-32 xl:grid-cols-270'>
+        <div className='xl:grid-cols-280 mt-16 grid grid-cols-1 justify-center gap-6 text-center sm:grid-cols-2 md:text-left lg:mt-32'>
           <div className='border-theme-pink border-opacity-80 py-4 pr-4 md:border-r-2 md:py-2'>
             <h3 className='text-theme-pink md:text-white'>
               Mut zu unserer Profession
@@ -49,7 +49,7 @@ export default function Themen() {
               und wie wir mit neuen Aufgabenfeldern umgehen.
             </p>
           </div>
-          <div className='border-theme-pink border-opacity-80 py-4 pr-4 md:border-r-2 md:py-2'>
+          <div className='border-theme-pink border-opacity-80 py-4 pr-4 md:border-r-2 md:py-2 xl:border-r-0'>
             <h3 className='text-theme-pink md:text-white'>Mut zu uns selbst</h3>
             <p className='text[14px] pt-4 leading-7'>
               Wie behaupten wir unsere Rolle im Unternehmen? Und wie verändert
